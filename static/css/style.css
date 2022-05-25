@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+:root {
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-head: "Audiowide", cursive;
+
+    --bg: 240, 95%, 9%;
+    --fg: 184, 96%, 46%;
+    --light: 190, 100%, 91%;
+    --dec: 341, 100%, 58%;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(var(--bg));
+}
+
+main {
+    margin-top: 1vmin;
+}
+
+h1 {
+    font-family: var(--font-head);
+    background-color: hsl(var(--bg));
+    color: hsl(var(--dec));
+    text-align: center;
+}
+
+.h_1 {
+    font-family: var(--font-head);
+    background-color: hsl(var(--bg));
+    color: hsl(var(--fg));
+}
