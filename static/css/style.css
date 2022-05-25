@@ -29,10 +29,46 @@ h1 {
     background-color: hsl(var(--bg));
     color: hsl(var(--dec));
     text-align: center;
+    opacity: 0.01;
+    -webkit-animation: fadeIn 450ms ease-in 300ms forwards;
+    animation: fadeIn 450ms ease-in 300ms forwards;
 }
 
 .h_1 {
     font-family: var(--font-head);
     background-color: hsl(var(--bg));
     color: hsl(var(--fg));
+    opacity: 0.01;
+    -webkit-animation: fadeIn 450ms ease-in 300ms forwards;
+    animation: fadeIn 450ms ease-in 300ms forwards;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.01;
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.01;
+        -webkit-transform: translateY(25%);
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
